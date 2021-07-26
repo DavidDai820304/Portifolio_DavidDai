@@ -15,6 +15,10 @@ h6 {
   font-weight: normal;
 }
 
+.back {
+  background-color: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,16 +57,20 @@ nav ul {
       flex-wrap: wrap;
 }
 
-nav ul li,
-nav ul a {
-  color: black;
-  font-size: 1.8rem;
+nav ul li {
   list-style-type: none;
-  text-decoration: none;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
-nav ul li a:hover {
+nav ul li a {
+  padding: 1rem;
+  color: black;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+nav ul li.Hover:hover {
+  cursor: pointer;
   background-color: #04459b;
   color: white;
   -webkit-transition: all 0.5s ease;
@@ -85,20 +93,9 @@ section.firstPage section.bigHead {
 }
 
 section.firstPage section.bigHead img {
-  position: relative;
   width: 20vw;
   height: 18.5vw;
-  top: 25%;
-}
-
-section.firstPage section.bigHead div.headBox {
-  position: relative;
-  background-color: #00b4d8;
-  width: 20vw;
-  height: 18.5vw;
-  z-index: -1;
-  top: -8.5vw;
-  left: 1vw;
+  margin: 1rem;
 }
 
 section.firstPage section.describe {
@@ -161,11 +158,22 @@ section.secondPage section.right div.workContent ul.lower li {
   header h1 {
     font-size: 3rem;
   }
+  p {
+    font-size: 0.7rem;
+  }
   header img {
-    width: 10vw;
+    width: 2rem;
+  }
+  section.firstPage section.bigHead img {
+    width: 15rem;
+    height: 15rem;
+  }
+  nav ul li {
+    padding: 0.5rem;
   }
   nav ul li a {
-    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
   }
   section.secondPage {
     font-size: 0.8rem;
