@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  background-color: #caf0f8;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  h1 {
+    font-weight: bolder;
+    font-size: 6rem;
+    margin: 1rem 1rem;
+  }
+  table {
+    margin: 1rem 1rem;
+  }
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #0077b6;
+  ul {
+    display: flex;
+    li {
+      font-size: 1.8rem;
+      list-style-type: none;
+      padding: 1rem;
+    }
+  }
+}
+
+section.firstPage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  section.bigHead {
+    margin: 0 5vw;
+    img {
+      position: relative;
+      width: 20vw;
+      height: 18.5vw;
+      top: 25%;
+    }
+    div.headBox {
+      position: relative;
+      background-color: #00b4d8;
+      width: 20vw;
+      height: 18.5vw;
+      z-index: -1;
+      top: -8.5vw;
+      left: 1vw;
+    }
+  }
+  section.describe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vw;
+    h4 {
+      color: #48cae4;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+section.divide {
+  background-color: #caf0f8;
+  height: 5vh;
+}
+
+section.secondPage {
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    background-color: #00b4d8;
+    padding: 0.1rem 1rem;
+  }
+
+  section.left {
+    margin: 2rem;
+  }
+
+  section.right {
+    margin: 2rem;
+    div.workContent {
+      margin-left: 2rem;
+      ul.lower li {
+        list-style-type: decimal;
+      }
+    }
+  }
+}

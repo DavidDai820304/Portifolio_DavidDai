@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #caf0f8;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header h1 {
+  font-weight: bolder;
+  font-size: 6rem;
+  margin: 1rem 1rem;
+}
+
+header table {
+  margin: 1rem 1rem;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #0077b6;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  font-size: 1.8rem;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+section.firstPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.firstPage section.bigHead {
+  margin: 0 5vw;
+}
+
+section.firstPage section.bigHead img {
+  position: relative;
+  width: 20vw;
+  height: 18.5vw;
+  top: 25%;
+}
+
+section.firstPage section.bigHead div.headBox {
+  position: relative;
+  background-color: #00b4d8;
+  width: 20vw;
+  height: 18.5vw;
+  z-index: -1;
+  top: -8.5vw;
+  left: 1vw;
+}
+
+section.firstPage section.describe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vw;
+}
+
+section.firstPage section.describe h4 {
+  color: #48cae4;
+  padding-bottom: 1rem;
+}
+
+section.divide {
+  background-color: #caf0f8;
+  height: 5vh;
+}
+
+section.secondPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.secondPage h3 {
+  background-color: #00b4d8;
+  padding: 0.1rem 1rem;
+}
+
+section.secondPage section.left {
+  margin: 2rem;
+}
+
+section.secondPage section.right {
+  margin: 2rem;
+}
+
+section.secondPage section.right div.workContent {
+  margin-left: 2rem;
+}
+
+section.secondPage section.right div.workContent ul.lower li {
+  list-style-type: decimal;
+}
+/*# sourceMappingURL=styles.css.map */
