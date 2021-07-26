@@ -120,16 +120,20 @@ section.secondPage {
 // RWD
 @media screen and (max-width: 600px) {
   header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   header img {
     width: 10vw;
   }
   nav ul li a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   section.secondPage {
     font-size: 0.8rem;
+    section.left,
+    section.right {
+      margin: 0.5rem;
+    }
   }
 }

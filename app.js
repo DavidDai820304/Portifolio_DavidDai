@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
         nav.style.backgroundColor = "rgba(0, 119, 182, 0.5)";
         navLiAnchor.forEach(a => {
             a.style.color = "white";
-            a.style.transition = "0.2s ease";
+            // a.style.transition = "0.2s ease";
         })
     } else {
         nav.style = "";
@@ -15,12 +15,14 @@ window.addEventListener("scroll", () => {
     }
 });
 
-function onAboutMeClick() {
-    window.location.hash = "#AboutMe";
-}
+navLiAnchor[0].addEventListener("click", () => {
+    let sectionFirstPage = document.querySelector("section.firstPage");
+    sectionFirstPage.scrollIntoView({behavior: "smooth"});
 
-function onAbilityClick() {
-    window.location.hash = "#Ability";
-}
+})
 
+navLiAnchor[1].addEventListener("click", () => {
+    let sectionSecondPage = document.querySelector("section.secondPage");
+    sectionSecondPage.scrollIntoView({behavior: "smooth"});
+})
 
