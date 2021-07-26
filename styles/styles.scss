@@ -36,12 +36,22 @@ nav {
   background-color: #0077b6;
   ul {
     display: flex;
-    li {
+    flex-wrap: wrap;
+    li,
+    a {
+      color: black;
       font-size: 1.8rem;
       list-style-type: none;
-      padding: 1rem;
+      text-decoration: none;
+      padding: 0.5rem;
     }
   }
+}
+
+nav ul li a:hover {
+  background-color: #04459b;
+  color: white;
+  transition: all 0.5s ease;
 }
 
 section.firstPage {
@@ -70,7 +80,7 @@ section.firstPage {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5vw;
+    margin: 1rem;
     h4 {
       color: #48cae4;
       padding-bottom: 1rem;
@@ -86,7 +96,7 @@ section.divide {
 section.secondPage {
   display: flex;
   justify-content: center;
-
+  flex-wrap: wrap;
   h3 {
     background-color: #00b4d8;
     padding: 0.1rem 1rem;
@@ -104,5 +114,22 @@ section.secondPage {
         list-style-type: decimal;
       }
     }
+  }
+}
+
+// RWD
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  header img {
+    width: 10vw;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  section.secondPage {
+    font-size: 0.8rem;
   }
 }

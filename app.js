@@ -1,16 +1,26 @@
 let nav = document.querySelector("nav");
-let navLi = document.querySelectorAll("header nav ul li");
+let navLiAnchor = document.querySelectorAll("nav ul li a");
 window.addEventListener("scroll", () => {
     if (window.pageYOffset != 0) {
-        nav.style.backgroundColor = "rgba(0, 0, 0, 0.5";
-        nav.style.color = "white";
-        nav.forEach(li => {
-            li.style.color = "white";
+        nav.style.backgroundColor = "rgba(0, 119, 182, 0.5)";
+        navLiAnchor.forEach(a => {
+            a.style.color = "white";
+            a.style.transition = "0.2s ease";
         })
     } else {
         nav.style = "";
-        headerAnchor.forEach(li => {
+        navLiAnchor.forEach(li => {
             li.style.color = "";
         })
     }
 });
+
+function onAboutMeClick() {
+    window.location.hash = "#AboutMe";
+}
+
+function onAbilityClick() {
+    window.location.hash = "#Ability";
+}
+
+
