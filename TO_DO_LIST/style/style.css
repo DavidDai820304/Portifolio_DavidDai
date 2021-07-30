@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/TO_DO_LIST/photo/wrtiting-tools.jpg);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  background-size: 2200px;
+  background-repeat: no-repeat;
+}
+
+header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form input,
+form button {
+  min-width: 0;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  margin: 0.1rem;
+}
+
+form input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+form select {
+  width: 110px;
+  font-size: 1.75rem;
+  padding: 0.21rem 0.45rem;
+  margin: 0.1rem;
+  text-align: center;
+  background-color: white;
+  border: none;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form button {
+  min-width: 180px;
+  cursor: pointer;
+  background-color: #009272;
+  color: white;
+}
+
+section.toDoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.toDoList div.todo {
+  min-width: 500px;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.2rem 0rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.toDoList div.todo p {
+  background-color: white;
+  color: black;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
+section.toDoList div.todo p.todo-text {
+  min-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+section.toDoList div.todo p.todo-time {
+  min-width: 200px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+section.toDoList div.todo button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  font-size: 2.1rem;
+  cursor: pointer;
+  color: white;
+}
+
+section.toDoList div.todo button.complete {
+  background-color: #1bd81b;
+}
+
+section.toDoList div.todo button.trash {
+  background-color: red;
+}
+
+section div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem;
+}
+
+section div.sort button {
+  cursor: pointer;
+  background-color: rgba(255, 198, 229, 0.76);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+section.calender {
+  margin: 2rem;
+  min-width: 10px;
+  max-width: 700px;
+  min-height: 300px;
+  max-height: 400px;
+  background: #fff;
+  -webkit-box-shadow: 30px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 30px 20px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.calender .title {
+  color: #6ac13c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+section.calender .title a {
+  text-decoration: none;
+  background-color: #6ac13c;
+  padding: 2px;
+  color: white;
+}
+
+section.calender .day ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.calender .day ul li {
+  list-style-type: none;
+  font-weight: bold;
+  color: #a8a8a8;
+  padding: 1rem 0rem;
+}
+
+section.calender .date ul {
+  font-weight: bolder;
+  display: block;
+}
+
+section.calender .date ul li {
+  width: 14.28%;
+  height: 36px;
+  line-height: 36px;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  text-align: center;
+}
+
+.lightgrey {
+  color: #a8a8a8;
+}
+
+.darkgrey {
+  color: #565656;
+}
+
+.green {
+  color: #379e00;
+}
+
+.mark {
+  background-color: rgba(217, 255, 0, 0.5);
+  border-radius: 100%;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 20vw;
+  }
+  section.toDoList h1 {
+    font-size: 2rem;
+  }
+  section.toDoList form {
+    width: 300px;
+  }
+  section.toDoList div.todo {
+    min-width: 270px;
+    max-width: 300px;
+  }
+  section.toDoList div.todo p {
+    font-size: 1rem;
+  }
+  section.toDoList div.todo p.todo-text {
+    min-width: 150px;
+  }
+  section.toDoList div.todo p.todo-time {
+    min-width: 120px;
+  }
+  section.toDoList div.todo button {
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

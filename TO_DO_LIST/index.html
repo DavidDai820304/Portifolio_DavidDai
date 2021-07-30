@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- icon src -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <!-- Add into list -->
+    <section class="toDoList">
+        <header>
+            <h1>David Dai's To Do List</h1>
+        </header>
+        <form>
+            <input type="text" placeholder="Type What to Do" required>
+            <input type="number" min="1" max="12" placeholder="M" required>
+            <input type="number" min="1" max="31" placeholder="D" required>
+            <select name="year" id="year-select" required>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+            <button type="sumbit">Add into list</button>
+        </form>
+        <br>
+        <br>
+        <div class="sort">
+            <button>List</button>
+        </div>
+    </section>
+    <!-- Calender -->
+    <section class="calender">
+        <div class="title">
+            <a href="" id="prev">Prev</a>
+            <div class="monthyear">
+                <h1 class="month" id="month">Month</h1>
+                <h2 class="year" id="year">Year</h2>
+            </div>
+            <a href="" id="next">Next</a>
+        </div>
+        <hr>
+        <div class="day">
+            <ul>
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+                <li>SUN</li>
+            </ul>
+        </div>
+        <div class="date">
+            <ul id="date"></ul>
+        </div>
+    </section>
+</body>
+<script src="./app.js"></script>
+</html>
