@@ -3,4 +3,4 @@
 
 ✏️ To Do List: 除 HTML、CSS、Sass、RWD排版，再加上使用 JavaScript 進行實作運用.
 
-✏️ 懂得使用 BootStrap (https://getbootstrap.com/), Copy & Paste 之功能, 不予呈現.
+✏️ 懂得使用 BootStrap (https://getbootstrap.com/).
